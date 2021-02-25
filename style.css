@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    padding-bottom: 89px;
+}
+
+#json {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    font-size: 16px;
+    font-style: Arial;
+}
+
+
+
+.yearly-calendar {
+    display: grid;
+    max-width: 800px;
+    margin: 10px;
+}
+.calendar-year {
+    display: flex;
+    justify-content: center;
+    background: white;
+    font-size: 25px;
+    color:#4169E1;
+}
+.calendar-year-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: .5em;
+}
+
+.calendar-month {
+    text-align: center;
+    padding: 3%;
+    font-size: 24px;
+    background: var(-main);
+    color:black;
+}
+.calendar-week, .calendar-day-names {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.calendar-week {
+    grid-auto-rows: max-content;
+    text-align: center;
+}
+.calendar-day-names {
+    grid-auto-rows: max-content;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2%;
+    background: #4169E1;
+    font-size: 18px;
+}
+.calendar {
+    background-color: white;
+    border: 1px solid #e1e1e1;
+}
+.calendar-day-name {
+    padding: 8% 0;
+    border: 1px solid black;
+}
+.calendar-day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    font-size: .89em;
+    line-height: 2;
+    border: 1px solid black;
+}
